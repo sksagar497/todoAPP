@@ -23,7 +23,7 @@ const page = (props) => {
           <input
             id="name"
             type="text"
-            value = {props.formData ? props.formData.name : ""}
+            value = {props.formData ? props.formData.name : null}
             className={`shadow appearance-none border border-red-500 bg-orange-200 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline ${
                 props.errors.name && "border-red-500"
             }`}
@@ -45,7 +45,7 @@ const page = (props) => {
           <input
             id="description"
             type="text"
-            value = {props.formData ? props.formData.description : ""}
+            value = {props.formData ? props.formData.description : null}
             className={`shadow appearance-none border border-red-500 bg-orange-200 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline ${
                 props.errors.description && "border-red-500"
             }`}
@@ -65,7 +65,7 @@ const page = (props) => {
           </label>
           <select
             id="status"
-            value = {props.formData ? props.formData.status : ""}
+            value = {props.formData ? props.formData.status : null}
             className={`shadow appearance-none border border-red-500 bg-orange-200 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline ${
                 props.errors.status && "border-red-500"
             }`}
@@ -88,7 +88,7 @@ const page = (props) => {
           <input
             id="time"
             type="text"
-            value = {props.formData ? props.formData.time : ""}
+            value = {props.formData ? props.formData.time : null}
             className={`shadow appearance-none border border-red-500 bg-orange-200 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline ${
                 props.errors.time && "border-red-500"
             }`}
